@@ -1,0 +1,448 @@
+<html dir="ltr" lang="en"><head>
+<meta charset="UTF-8">
+<title>Dashboard</title>
+<base href="https://demo.opencart.com/admin/">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+<script type="text/javascript" src="view/javascript/jquery/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="view/javascript/bootstrap/js/bootstrap.min.js"></script>
+<link href="view/stylesheet/bootstrap.css" type="text/css" rel="stylesheet">
+<link href="view/javascript/font-awesome/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+<script src="view/javascript/jquery/datetimepicker/moment/moment.min.js" type="text/javascript"></script>
+<script src="view/javascript/jquery/datetimepicker/moment/moment-with-locales.min.js" type="text/javascript"></script>
+<script src="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.js" type="text/javascript"></script>
+<link href="view/javascript/jquery/datetimepicker/bootstrap-datetimepicker.min.css" type="text/css" rel="stylesheet" media="screen">
+<link type="text/css" href="view/stylesheet/stylesheet.css" rel="stylesheet" media="screen">
+<script src="view/javascript/common.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="container">
+<header id="header" class="navbar navbar-static-top">
+<div class="container-fluid">
+<div id="header-logo" class="navbar-header"><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO" class="navbar-brand"><img src="view/image/logo.png" alt="OpenCart" title="OpenCart"></a></div>
+<a href="#" id="button-menu" class="hidden-md hidden-lg"><span class="fa fa-bars"></span></a>
+<ul class="nav navbar-nav navbar-right">
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://demo.opencart.com/image/cache/profile-45x45.png" alt="demo demo" title="demo" id="user-profile" class="img-circle">demo demo <i class="fa fa-caret-down fa-fw"></i></a>
+<ul class="dropdown-menu dropdown-menu-right">
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/profile&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO"><i class="fa fa-user-circle-o fa-fw"></i> Your Profile</a></li>
+<li role="separator" class="divider"></li>
+<li class="dropdown-header">Stores</li>
+<li><a href="https://demo.opencart.com/" target="_blank">Your Store</a></li>
+<li role="separator" class="divider"></li>
+<li class="dropdown-header">Help</li>
+<li><a href="http://www.opencart.com" target="_blank"><i class="fa fa-opencart fa-fw"></i> OpenCart Homepage</a></li>
+<li><a href="http://docs.opencart.com" target="_blank"><i class="fa fa-file-text-o fa-fw"></i> Documentation</a></li>
+<li><a href="http://forum.opencart.com" target="_blank"><i class="fa fa-comments-o fa-fw"></i> Support Forum</a></li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/logout&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO"><i class="fa fa-sign-out"></i> <span class="hidden-xs hidden-sm hidden-md">Logout</span></a></li>
+</ul>
+</div>
+</header>
+<nav id="column-left">
+<div id="navigation"><span class="fa fa-bars"></span> Navigation</div>
+<ul id="menu">
+<li id="menu-dashboard"><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO"><i class="fa fa-dashboard fw"></i> Dashboard</a> </li>
+<li id="menu-catalog"><a href="#collapse1" data-toggle="collapse" class="parent collapsed"><i class="fa fa-tags fw"></i> Catalog</a> <ul id="collapse1" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/category&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Categories</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/product&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Products</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/recurring&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Recurring Profiles</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/filter&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Filters</a> </li>
+<li><a href="#collapse5" data-toggle="collapse" class="parent collapsed">Attributes</a> <ul id="collapse5" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/attribute&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Attributes</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/attribute_group&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Attribute Groups</a> </li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/option&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Options</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/manufacturer&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Manufacturers</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/download&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Downloads</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/review&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Reviews</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=catalog/information&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Information</a> </li>
+</ul>
+</li>
+<li id="menu-extension"><a href="#collapse14" data-toggle="collapse" class="parent collapsed"><i class="fa fa-puzzle-piece fw"></i> Extensions</a> <ul id="collapse14" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/marketplace&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Marketplace</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/installer&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Installer</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/extension&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Extensions</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/modification&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Modifications</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketplace/event&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Events</a> </li>
+</ul>
+</li>
+<li id="menu-design"><a href="#collapse20" data-toggle="collapse" class="parent collapsed"><i class="fa fa-television fw"></i> Design</a> <ul id="collapse20" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/layout&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Layouts</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/theme&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Theme Editor</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/translation&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Language Editor</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/banner&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Banners</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=design/seo_url&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">SEO URL</a> </li>
+</ul>
+</li>
+<li id="menu-sale"><a href="#collapse26" data-toggle="collapse" class="parent collapsed"><i class="fa fa-shopping-cart fw"></i> Sales</a> <ul id="collapse26" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/order&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Orders</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/recurring&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Recurring Profiles</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/return&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Returns</a> </li>
+<li><a href="#collapse29" data-toggle="collapse" class="parent collapsed">Gift Vouchers</a> <ul id="collapse29" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/voucher&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Gift Vouchers</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=sale/voucher_theme&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Voucher Themes</a> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-customer"><a href="#collapse33" data-toggle="collapse" class="parent collapsed"><i class="fa fa-user fw"></i> Customers</a> <ul id="collapse33" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/customer&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Customers</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/customer_group&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Customer Groups</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/customer_approval&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Customer Approvals</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=customer/custom_field&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Custom Fields</a> </li>
+</ul>
+</li>
+<li id="menu-marketing"><a href="#collapse38" data-toggle="collapse" class="parent collapsed"><i class="fa fa-share-alt fw"></i> Marketing</a> <ul id="collapse38" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketing/marketing&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Marketing</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketing/coupon&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Coupons</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=marketing/contact&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Mail</a> </li>
+</ul>
+</li>
+<li id="menu-system"><a href="#collapse42" data-toggle="collapse" class="parent collapsed"><i class="fa fa-cog fw"></i> System</a> <ul id="collapse42" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=setting/store&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Settings</a> </li>
+<li><a href="#collapse43" data-toggle="collapse" class="parent collapsed">Localisation</a> <ul id="collapse43" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/location&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Store Location</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/language&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Languages</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/currency&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Currencies</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/stock_status&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Stock Statuses</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/order_status&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Order Statuses</a> </li>
+<li><a href="#collapse48" data-toggle="collapse" class="parent collapsed">Returns</a> <ul id="collapse48" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/return_status&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Return Statuses</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/return_action&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Return Actions</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/return_reason&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Return Reasons</a></li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/country&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Countries</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/zone&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Zones</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/geo_zone&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Geo Zones</a> </li>
+<li><a href="#collapse52" data-toggle="collapse" class="parent collapsed">Taxes</a> <ul id="collapse52" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/tax_class&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Tax Classes</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/tax_rate&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Tax Rates</a></li>
+</ul>
+</li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/length_class&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Length Classes</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=localisation/weight_class&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Weight Classes</a> </li>
+</ul>
+</li>
+<li><a href="#collapse56" data-toggle="collapse" class="parent collapsed">Maintenance</a> <ul id="collapse56" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=tool/backup&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Backup / Restore</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=tool/upload&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Uploads</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=tool/log&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Error Logs</a> </li>
+</ul>
+</li>
+</ul>
+</li>
+<li id="menu-report"><a href="#collapse61" data-toggle="collapse" class="parent collapsed"><i class="fa fa-bar-chart-o fw"></i> Reports</a> <ul id="collapse61" class="collapse">
+<li><a href="https://demo.opencart.com/admin/index.php?route=report/report&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Reports</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=report/online&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Who's Online</a> </li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=report/statistics&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Statistics</a> </li>
+</ul>
+</li>
+</ul>
+<div id="stats">
+<ul>
+<li>
+<div>Orders Completed <span class="pull-right">0%</span></div>
+<div class="progress">
+<div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+</div>
+</li>
+<li>
+<div>Orders Processing <span class="pull-right">0%</span></div>
+<div class="progress">
+<div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+</div>
+</li>
+<li>
+<div>Other Statuses <span class="pull-right">0%</span></div>
+<div class="progress">
+<div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"> <span class="sr-only">0%</span></div>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<div id="content">
+<div class="page-header">
+<div class="container-fluid">
+<div class="pull-right">
+<button type="button" id="button-setting" title="" data-loading-text="Loading..." class="btn btn-info"><i class="fa fa-cog"></i></button>
+</div>
+<h1>Dashboard</h1>
+<ul class="breadcrumb">
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Home</a></li>
+<li><a href="https://demo.opencart.com/admin/index.php?route=common/dashboard&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">Dashboard</a></li>
+</ul>
+</div>
+</div>
+<div class="container-fluid"> <div class="row"> <div class="col-lg-3 col-md-3 col-sm-6"><div class="tile tile-primary">
+<div class="tile-heading">Total Orders <span class="pull-right">
+<i class="fa fa-caret-down"></i>
+-7%</span></div>
+<div class="tile-body"><i class="fa fa-shopping-cart"></i>
+<h2 class="pull-right">12.9K</h2>
+</div>
+<div class="tile-footer"><a href="https://demo.opencart.com/admin/index.php?route=sale/order&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">View more...</a></div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6"><div class="tile tile-primary">
+<div class="tile-heading">Total Sales <span class="pull-right">
+<i class="fa fa-caret-down"></i>
+-4608%</span></div>
+<div class="tile-body"><i class="fa fa-credit-card"></i>
+<h2 class="pull-right">12.2M</h2>
+</div>
+<div class="tile-footer"><a href="https://demo.opencart.com/admin/index.php?route=sale/order&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">View more...</a></div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6"><div class="tile tile-primary">
+<div class="tile-heading">Total Customers <span class="pull-right">
+<i class="fa fa-caret-up"></i>
+28%</span></div>
+<div class="tile-body"><i class="fa fa-user"></i>
+<h2 class="pull-right">155.7K</h2>
+</div>
+<div class="tile-footer"><a href="https://demo.opencart.com/admin/index.php?route=customer/customer&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">View more...</a></div>
+</div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6"><div class="tile tile-primary">
+<div class="tile-heading">People Online</div>
+<div class="tile-body"><i class="fa fa-users"></i>
+<h2 class="pull-right">0</h2>
+</div>
+<div class="tile-footer"><a href="https://demo.opencart.com/admin/index.php?route=report/online&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO">View more...</a></div>
+</div>
+</div>
+</div>
+<div class="row"> <div class="col-lg-6 col-md-12 col-sm-12"><div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-globe"></i> World Map</h3>
+</div>
+<div class="panel-body">
+<div id="vmap" style="width: 100%; height: 260px;"></div>
+</div>
+</div>
+<link type="text/css" href="view/javascript/jquery/jqvmap/jqvmap.css" rel="stylesheet" media="screen">
+<script type="text/javascript" src="view/javascript/jquery/jqvmap/jquery.vmap.js"></script>
+<script type="text/javascript" src="view/javascript/jquery/jqvmap/maps/jquery.vmap.world.js"></script>
+<script type="text/javascript"><!--
+$(document).ready(function() {
+	$.ajax({
+		url: 'index.php?route=extension/dashboard/map/map&user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO',
+		dataType: 'json',
+		success: function(json) {
+			data = [];
+						
+			for (i in json) {
+				data[i] = json[i]['total'];
+			}
+					
+			$('#vmap').vectorMap({
+				map: 'world_en',
+				backgroundColor: '#FFFFFF',
+				borderColor: '#FFFFFF',
+				color: '#9FD5F1',
+				hoverOpacity: 0.7,
+				selectedColor: '#666666',
+				enableZoom: true,
+				showTooltip: true,
+				values: data,
+				normalizeFunction: 'polynomial',
+				onLabelShow: function(event, label, code) {
+					if (json[code]) {
+						label.html('<strong>' + label.text() + '</strong><br />' + 'Orders ' + json[code]['total'] + '<br />' + 'Sales ' + json[code]['amount']);
+					}
+				}
+			});			
+		},
+        error: function(xhr, ajaxOptions, thrownError) {
+            alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+	});			
+});
+//--></script> </div>
+<div class="col-lg-6 col-md-12 col-sm-12"><div class="panel panel-default">
+<div class="panel-heading">
+<div class="pull-right"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i> <i class="caret"></i></a>
+<ul id="range" class="dropdown-menu dropdown-menu-right">
+<li><a href="day">Today</a></li>
+<li><a href="week">Week</a></li>
+<li class="active"><a href="month">Month</a></li>
+<li><a href="year">Year</a></li>
+</ul>
+</div>
+<h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Sales Analytics</h3>
+</div>
+<div class="panel-body">
+<div id="chart-sale" style="width: 100%; height: 260px;"></div>
+</div>
+</div>
+<script type="text/javascript" src="view/javascript/jquery/flot/jquery.flot.js"></script>
+<script type="text/javascript" src="view/javascript/jquery/flot/jquery.flot.resize.min.js"></script>
+<script type="text/javascript"><!--
+$('#range a').on('click', function(e) {
+	e.preventDefault();
+	
+	$(this).parent().parent().find('li').removeClass('active');
+	
+	$(this).parent().addClass('active');
+	
+	$.ajax({
+		type: 'get',
+		url: 'index.php?route=extension/dashboard/chart/chart&user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO&range=' + $(this).attr('href'),
+		dataType: 'json',
+		success: function(json) {
+            if (typeof json['order'] == 'undefined') { return false; }
+			
+			var option = {	
+				shadowSize: 0,
+				colors: ['#9FD5F1', '#1065D2'],
+				bars: { 
+					show: true,
+					fill: true,
+					lineWidth: 1
+				},
+				grid: {
+					backgroundColor: '#FFFFFF',
+					hoverable: true
+				},
+				points: {
+					show: false
+				},
+				xaxis: {
+					show: true,
+            		ticks: json['xaxis']
+				}
+			}
+			
+			$.plot('#chart-sale', [json['order'], json['customer']], option);	
+					
+			$('#chart-sale').bind('plothover', function(event, pos, item) {
+				$('.tooltip').remove();
+			  
+				if (item) {
+					$('<div id="tooltip" class="tooltip top in"><div class="tooltip-arrow"></div><div class="tooltip-inner">' + item.datapoint[1].toFixed(2) + '</div></div>').prependTo('body');
+					
+					$('#tooltip').css({
+						position: 'absolute',
+						left: item.pageX - ($('#tooltip').outerWidth() / 2),
+						top: item.pageY - $('#tooltip').outerHeight(),
+						pointer: 'cusror'
+					}).fadeIn('slow');	
+					
+					$('#chart-sale').css('cursor', 'pointer');		
+			  	} else {
+					$('#chart-sale').css('cursor', 'auto');
+				}
+			});
+		},
+        error: function(xhr, ajaxOptions, thrownError) {
+           alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+	});
+});
+
+$('#range .active a').trigger('click');
+//--></script> </div>
+</div>
+<div class="row"> <div class="col-lg-4 col-md-12 col-sm-12"><div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-calendar"></i> Recent Activity</h3>
+</div>
+<ul class="list-group">
+<li class="list-group-item text-center">No results!</li>
+</ul>
+</div></div>
+<div class="col-lg-8 col-md-12 col-sm-12"><div class="panel panel-default">
+<div class="panel-heading">
+<h3 class="panel-title"><i class="fa fa-shopping-cart"></i> Latest Orders</h3>
+</div>
+<div class="table-responsive">
+<table class="table">
+<thead>
+<tr>
+<td class="text-right">Order ID</td>
+<td>Customer</td>
+<td>Status</td>
+<td>Date Added</td>
+<td class="text-right">Total</td>
+<td class="text-right">Action</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="text-right">16646</td>
+<td>David Singh</td>
+<td>Pending</td>
+<td>05/05/2022</td>
+<td class="text-right">$1,205.00</td>
+<td class="text-right"><a href="https://demo.opencart.com/admin/index.php?route=sale/order/info&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO&amp;order_id=16646" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a></td>
+</tr>
+<tr>
+<td class="text-right">16645</td>
+<td>David Singh</td>
+<td>Pending</td>
+<td>05/05/2022</td>
+<td class="text-right">$205.00</td>
+<td class="text-right"><a href="https://demo.opencart.com/admin/index.php?route=sale/order/info&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO&amp;order_id=16645" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a></td>
+</tr>
+<tr>
+<td class="text-right">16643</td>
+<td>First Name Last Name</td>
+<td>Pending</td>
+<td>04/05/2022</td>
+<td class="text-right">$105.00</td>
+<td class="text-right"><a href="https://demo.opencart.com/admin/index.php?route=sale/order/info&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO&amp;order_id=16643" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a></td>
+</tr>
+<tr>
+<td class="text-right">16642</td>
+<td>Arun pathak</td>
+<td>Pending</td>
+<td>04/05/2022</td>
+<td class="text-right">$205.00</td>
+<td class="text-right"><a href="https://demo.opencart.com/admin/index.php?route=sale/order/info&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO&amp;order_id=16642" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a></td>
+</tr>
+<tr>
+<td class="text-right">16635</td>
+<td>David Singh</td>
+<td>Pending</td>
+<td>04/05/2022</td>
+<td class="text-right">$305.00</td>
+<td class="text-right"><a href="https://demo.opencart.com/admin/index.php?route=sale/order/info&amp;user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO&amp;order_id=16635" data-toggle="tooltip" title="" class="btn btn-info" data-original-title="View"><i class="fa fa-eye"></i></a></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript"><!--
+$('#button-setting').on('click', function() {
+	$.ajax({
+		url: 'index.php?route=common/developer&user_token=VaiHklD8AN8rPPehf84AKi0fmcY4WHVO',
+		dataType: 'html',
+		beforeSend: function() {
+			$('#button-setting').button('loading');
+		},
+		complete: function() {
+			$('#button-setting').button('reset');
+		},
+		success: function(html) {
+			$('#modal-developer').remove();
+			
+			$('body').prepend('<div id="modal-developer" class="modal">' + html + '</div>');
+			
+			$('#modal-developer').modal('show');
+		},
+		error: function(xhr, ajaxOptions, thrownError) {
+			alert(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+		}
+	});	
+});	
+//--></script>
+</div>
+<footer id="footer"><a href="http://www.opencart.com">OpenCart</a> © 2009-2022 All Rights Reserved.<br>Version 3.0.1.1</footer></div>
+
+</body></html>
