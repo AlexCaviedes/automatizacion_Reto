@@ -1,11 +1,0 @@
-
-V
-java:S1118":Add a private constructor to hide the implicit public one.(›k8Šš·€‰0
-[
-java:S3252	"9Use static access with "org.openqa.selenium.By" for "id".(İÒ¬‘ıÿÿÿÿ8´¼€‰0
-U
-java:S3252"9Use static access with "org.openqa.selenium.By" for "id".(¤ÅÇ8‰áÀ€‰0
-^
-java:S3252"<Use static access with "org.openqa.selenium.By" for "xpath".(²ÙÓĞùÿÿÿÿ8š·€‰0
-d
-java:S3252"BUse static access with "org.openqa.selenium.By" for "cssSelector".(¡ö‚üøÿÿÿÿ8š·€‰0
